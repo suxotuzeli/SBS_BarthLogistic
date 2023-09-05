@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SBS_BarthLogistic.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SBS_BarthLogistic_ge_rs_services_WayBills" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://services.rs.ge/WayBillService/WayBillService.asmx</Value>
+    </Setting>
+    <Setting Name="SBS_Market_ge_rs_services_WayBills" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://services.rs.ge/WayBillService/WayBillService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.0" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <Databases isList="true" count="1">
+      <SBS_Market_x0020_Con Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>SBS_Market Con</Alias>
+        <ConnectionString>Password=;Data Source=Badri;Integrated Security=True;Initial Catalog=RSF;User ID=</ConnectionString>
+        <Name>SBS_Market Con</Name>
+      </SBS_Market_x0020_Con>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <Real2 Ref="3" type="DataTableSource" isKey="true">
+        <Alias>Real2</Alias>
+        <Columns isList="true" count="18">
+          <value>IdReal2,System.Int32</value>
+          <value>IdReal1,System.Int32</value>
+          <value>Raod,System.Double</value>
+          <value>Fasi,System.Double</value>
+          <value>Tanxa,System.Double</value>
+          <value>IdProd,System.String</value>
+          <value>Prod,System.String</value>
+          <value>UN,System.String</value>
+          <value>CD,System.DateTime</value>
+          <value>Dgg,System.Decimal</value>
+          <value>IdProdTG,System.Int16</value>
+          <value>IsVirtual,System.Double</value>
+          <value>RealType,System.String</value>
+          <value>Ert,System.String</value>
+          <value>Tevadoba,System.Double</value>
+          <value>Fasi9,System.Double</value>
+          <value>netweigh,netweigh,System.Double,Real2.Fasi9_x002A_Real2.Raod</value>
+          <value>grossweigh,grossweigh,System.Double,Real2.Tevadoba_x002A_Real2.Raod</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Real2</Name>
+        <NameInSource>Real2</NameInSource>
+      </Real2>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="14">
+      <value>,Data,Data,System.DateTime,_x0039__x002F_7_x002F_2013,False,False</value>
+      <value>,Gvari,Gvari,System.String,_x002D_,False,False</value>
+      <value>,Zedd,Zedd,System.String,,False,False</value>
+      <value>,Sagad,Sagad,System.String,,False,False</value>
+      <value>,Address,Address,System.String,,False,False</value>
+      <value>,CompanyName,CompanyName,System.String,,False,False</value>
+      <value>,CompanySagad,CompanySagad,System.String,,False,False</value>
+      <value>,CompanyAddress,CompanyAddress,System.String,,False,False</value>
+      <value>,email,email,System.String,,False,False</value>
+      <value>,Valuta,Valuta,System.String,,False,False</value>
+      <value>,Phone,Phone,System.String,,False,False</value>
+      <value>,LegalAddress,LegalAddress,System.String,,False,False</value>
+      <value>,City,City,System.String,_x0028_LegalAddress_x002B__x0022__x0020__x0020__x0022__x0029_.Substring_x0028__x0028_LegalAddress_x002B__x0022__x005E__x0020__x0022__x0029_.IndexOf_x0028__x0022__x005E__x0022__x0029__x002B_1_x002C__x0028_LegalAddress_x002B__x0022__x0020__x0020__x0022__x0029_.Length-_x0028_LegalAddress_x002B__x0022__x005E__x0020__x0022__x0029_.IndexOf_x0028__x0022__x005E__x0022__x0029_-1_x0029_,False,True</value>
+      <value>,Country,Country,System.String,_x0028_LegalAddress_x002B__x0022__x005E__x0020__x0022__x0029_.Substring_x0028_0_x002C__x0028_LegalAddress_x002B__x0022__x005E__x0020__x0022__x0029_.IndexOf_x0028__x0022__x005E__x0022__x0029__x0029__x000D__x000A__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020__x0020_,False,True</value>
+    </Variables>
+  </Dictionary>
+  <GlobalizationStrings isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="5">
+        <PageHeaderBand1 Ref="5" type="PageHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.2,7.49,3</ClientRectangle>
+          <Components isList="true" count="11">
+            <Text8 Ref="6" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.3,0.7,1.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>გამყიდველი:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="7" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text8>
+            <Text10 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.5,0,1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>Pages {PageNumber} of {TotalPageCount}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="9" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text10>
+            <Text13 Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,0.9,3.1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>მყიდველი:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="11" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text13>
+            <Text29 Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.6,0,2.6,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,22,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text29</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>ინვოისი</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="13" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text29>
+            <Text31 Ref="14" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.2,1,2.9,1.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text31</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{CompanyName}
+საიდ.: {CompanySagad}
+{CompanyAddress}
+Email: color2georgia@c2g.ge
+Tel: +995 32 381890
+საქართველოს ბანკი
+ანგ. GE79BG0000000306790600
+ბანკის კოდი BAGAGE22</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="15" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text31>
+            <Image1 Ref="16" type="Image" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,1.7,0.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Image>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</Image>
+              <Name>Image1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+            </Image1>
+            <Text30 Ref="17" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,1.3,3.1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text30</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{Gvari}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="18" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text30>
+            <Text16 Ref="19" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,1.9,3.1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{City}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="20" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text16>
+            <Text36 Ref="21" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,1.7,3.1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text36</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{Address}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="22" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text36>
+            <Text35 Ref="23" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,1.5,3.1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text35</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{Sagad}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="24" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text35>
+            <Text53 Ref="25" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.2,2.1,3.1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text53</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{Country}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="26" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text53>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageHeaderBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </PageHeaderBand1>
+        <GroupHeader1 Ref="27" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,3.6,7.49,0.3</ClientRectangle>
+          <Components isList="true" count="5">
+            <Text4 Ref="28" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>WhiteSmoke</Brush>
+              <ClientRectangle>0.2,0,4.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="4" />
+              <Parent isRef="27" />
+              <Text>დასახელება</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="29" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+            <Text18 Ref="30" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>WhiteSmoke</Brush>
+              <ClientRectangle>0,0,0.5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="4" />
+              <Parent isRef="27" />
+              <Text>#</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="31" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text18>
+            <Text20 Ref="32" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>WhiteSmoke</Brush>
+              <ClientRectangle>5,0,0.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="4" />
+              <Parent isRef="27" />
+              <Text>რაოდ.</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="33" type="GeneralFormat" isKey="true" />
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text20>
+            <Text21 Ref="34" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>WhiteSmoke</Brush>
+              <ClientRectangle>5.8,0,0.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="4" />
+              <Parent isRef="27" />
+              <Text>ერთ. ფასი</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="35" type="GeneralFormat" isKey="true" />
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text21>
+            <Text1 Ref="36" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>WhiteSmoke</Brush>
+              <ClientRectangle>6.6,0,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="4" />
+              <Parent isRef="27" />
+              <Text>თანხა</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="37" type="GeneralFormat" isKey="true" />
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeader1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </GroupHeader1>
+        <Data1 Ref="38" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,4.3,7.49,0.25</ClientRectangle>
+          <Components isList="true" count="5">
+            <Text24 Ref="39" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>0.5,0,4.5,0.25</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text24</Name>
+              <Page isRef="4" />
+              <Parent isRef="38" />
+              <Text>{Real2.Prod}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="40" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text24>
+            <Text25 Ref="41" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>0,0,0.5,0.25</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text25</Name>
+              <Page isRef="4" />
+              <Parent isRef="38" />
+              <Text>{Line}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="42" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text25>
+            <Text34 Ref="43" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>5,0,0.8,0.25</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text34</Name>
+              <Page isRef="4" />
+              <Parent isRef="38" />
+              <Text>{Real2.Raod}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="44" type="GeneralFormat" isKey="true" />
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text34>
+            <Text45 Ref="45" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>6.6,0,0.9,0.25</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text45</Name>
+              <Page isRef="4" />
+              <Parent isRef="38" />
+              <Text>{Real2.Tanxa}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="46" type="GeneralFormat" isKey="true" />
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text45>
+            <Text2 Ref="47" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>5.8,0,0.8,0.25</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="4" />
+              <Parent isRef="38" />
+              <Text>{Real2.Fasi}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="48" type="GeneralFormat" isKey="true" />
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName />
+          <DataSourceName>Real2</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>Data1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="2">
+            <value>ASC</value>
+            <value>IdProd</value>
+          </Sort>
+        </Data1>
+        <GroupFooter1 Ref="49" type="GroupFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,4.95,7.49,0.5</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text7 Ref="50" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,6.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="4" />
+              <Parent isRef="49" />
+              <Text>ჯამი:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="51" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text7>
+            <Text17 Ref="52" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.6,0,0.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="4" />
+              <Parent isRef="49" />
+              <Text>{Sum(Data1,Real2.Tanxa)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="53" type="GeneralFormat" isKey="true" />
+              <Type>Totals</Type>
+            </Text17>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>GroupFooter1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </GroupFooter1>
+        <ReportSummaryBand1 Ref="54" type="ReportSummaryBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,5.85,7.49,1.2</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>ReportSummaryBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </ReportSummaryBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>2826772e941c4769a2bc85417f8de27b</Guid>
+      <Margins>0.39,0.39,0.39,0.39</Margins>
+      <Name>Page1</Name>
+      <Page isRef="4" />
+      <PageHeight>11.69</PageHeight>
+      <PageWidth>8.27</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="55" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="56" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>10/17/2013 7:45:43 PM</ReportChanged>
+  <ReportCreated>4/10/2008 10:30:20 AM</ReportCreated>
+  <ReportGuid>5931fa898ac5405cb7007578b9943711</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2007.3.100</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        
+        public Report()
+        {
+            this.InitializeComponent();
+        }
+        #region StiReport Designer generated code - do not modify#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="1">
+    <Style1 Ref="57" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Brush>LemonChiffon</Brush>
+      <Font>Arial,8</Font>
+      <Name>Style1</Name>
+      <TextBrush>Black</TextBrush>
+    </Style1>
+  </Styles>
+</StiSerializer>

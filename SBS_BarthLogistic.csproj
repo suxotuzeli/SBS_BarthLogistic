@@ -1,0 +1,2145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C6495C88-439A-4287-BC5B-D1A9DA4207FC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SBS_BarthLogistic</RootNamespace>
+    <AssemblyName>SBS_BarthLogistic</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <HockeyAppResourceId>8f9409fa7f0d496bb98c8ee9700f12e0</HockeyAppResourceId>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>SBS_BarthLogistic.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=18.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>packages\Aspose.Cells.18.4.1\lib\net40\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.v20.1.0.3\lib\net46\DevExpress.Charts.v20.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.v20.1.0.3\lib\net46\DevExpress.Data.Desktop.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.v20.1.0.3\lib\net46\DevExpress.Data.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.v20.1.0.3\lib\net46\DevExpress.Office.v20.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.v20.1.0.3\lib\net46\DevExpress.PivotGrid.v20.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.v20.1.0.3\lib\net46\DevExpress.Printing.v20.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.v20.1.0.3\lib\net46\DevExpress.RichEdit.v20.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.v20.1.0.3\lib\net46\DevExpress.Utils.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.v20.1.0.3\lib\net46\DevExpress.XtraBars.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.v20.1.0.3\lib\net46\DevExpress.XtraCharts.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v20.1.UI, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.v20.1.0.3\lib\net46\DevExpress.XtraCharts.v20.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.v20.1.0.3\lib\net46\DevExpress.XtraEditors.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.v20.1.0.3\lib\net46\DevExpress.XtraGrid.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.v20.1.0.3\lib\net46\DevExpress.XtraPivotGrid.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.v20.1.0.3\lib\net46\DevExpress.XtraRichEdit.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>packages\DevExpress.v20.1.0.3\lib\net46\DevExpress.XtraVerticalGrid.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2015.1.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>packages\Stimulsoft.15.0.1\lib\net40\Stimulsoft.Base.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2015.1.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <HintPath>packages\Stimulsoft.15.0.1\lib\net40\Stimulsoft.Report.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddForms\AddAdminCnobariForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddAdminCnobariForm.designer.cs">
+      <DependentUpon>AddAdminCnobariForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddAllForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddAllForm.designer.cs">
+      <DependentUpon>AddAllForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddCompanyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddCompanyForm.designer.cs">
+      <DependentUpon>AddCompanyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddInvoices1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddInvoices1Form.designer.cs">
+      <DependentUpon>AddInvoices1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddGas1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddGas1Form.designer.cs">
+      <DependentUpon>AddGas1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddInvoices2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddInvoices2Form.designer.cs">
+      <DependentUpon>AddInvoices2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddOrgProdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddOrgProdForm.designer.cs">
+      <DependentUpon>AddOrgProdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddGas2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddGas2Form.designer.cs">
+      <DependentUpon>AddGas2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddOrgServicesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddOrgServicesForm.designer.cs">
+      <DependentUpon>AddOrgServicesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddOrgForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddOrgForm.designer.cs">
+      <DependentUpon>AddOrgForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddMdzForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddMdzForm.designer.cs">
+      <DependentUpon>AddMdzForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddMISubForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddMISubForm.designer.cs">
+      <DependentUpon>AddMISubForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddModz1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddModz1Form.designer.cs">
+      <DependentUpon>AddModz1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddProekForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddProekForm.designer.cs">
+      <DependentUpon>AddProekForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddSalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddSalForm.designer.cs">
+      <DependentUpon>AddSalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddServiceRealForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddServiceRealForm.designer.cs">
+      <DependentUpon>AddServiceRealForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddShem1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddShem1Form.designer.cs">
+      <DependentUpon>AddShem1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddShem2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddShem2Form.designer.cs">
+      <DependentUpon>AddShem2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddZeddAutoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddZeddAutoForm.designer.cs">
+      <DependentUpon>AddZeddAutoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddAgcera1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddAgcera1Form.designer.cs">
+      <DependentUpon>AddAgcera1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddAgcera2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddAgcera2Form.designer.cs">
+      <DependentUpon>AddAgcera2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddModz2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddModz2Form.designer.cs">
+      <DependentUpon>AddModz2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddAgceraNashtiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddAgceraNashtiForm.designer.cs">
+      <DependentUpon>AddAgceraNashtiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddAgceraPreNashtiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddAgceraPreNashtiForm.designer.cs">
+      <DependentUpon>AddAgceraPreNashtiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AEDForms\AdminCnobariForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AEDForms\AdminCnobariForm.designer.cs">
+      <DependentUpon>AdminCnobariForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AEDForms\AEDAllForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AEDForms\AEDAllForm.designer.cs">
+      <DependentUpon>AEDAllForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AEDForms\CompanyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AEDForms\CompanyForm.designer.cs">
+      <DependentUpon>CompanyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AEDForms\Agcera1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AEDForms\Agcera1Form.designer.cs">
+      <DependentUpon>Agcera1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AEDForms\Gas1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AEDForms\Gas1Form.designer.cs">
+      <DependentUpon>Gas1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AEDForms\MISubForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AEDForms\MISubForm.designer.cs">
+      <DependentUpon>MISubForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AEDForms\MdzForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AEDForms\MdzForm.designer.cs">
+      <DependentUpon>MdzForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AEDForms\SalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AEDForms\SalForm.designer.cs">
+      <DependentUpon>SalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AEDForms\ServiceRealForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AEDForms\ServiceRealForm.designer.cs">
+      <DependentUpon>ServiceRealForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AEDForms\ZeddAutoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AEDForms\ZeddAutoForm.designer.cs">
+      <DependentUpon>ZeddAutoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AEDForms\ProekForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AEDForms\ProekForm.designer.cs">
+      <DependentUpon>ProekForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AEDForms\Invoices1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AEDForms\Invoices1Form.designer.cs">
+      <DependentUpon>Invoices1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AEDForms\OrgForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AEDForms\OrgForm.designer.cs">
+      <DependentUpon>OrgForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AEDForms\Modz1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AEDForms\Modz1Form.designer.cs">
+      <DependentUpon>Modz1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AEDForms\Shem1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AEDForms\Shem1Form.designer.cs">
+      <DependentUpon>Shem1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\CLSAddToCombo.cs" />
+    <Compile Include="Classes\CLSAedAll.cs" />
+    <Compile Include="Classes\CLSChartOperation.cs" />
+    <Compile Include="Classes\CLSCustomCnobari.cs" />
+    <Compile Include="Classes\CLSDatabaseOperation.cs" />
+    <Compile Include="Classes\CLSExcel.cs" />
+    <Compile Include="Classes\CLSExportSeveralTablesToExcel.cs" />
+    <Compile Include="Classes\CLSFForms.cs" />
+    <Compile Include="Classes\CLSGlobalParameters.cs" />
+    <Compile Include="Classes\CLSGraphicalElements.cs" />
+    <Compile Include="Classes\CLSGridViewOperation.cs" />
+    <Compile Include="Classes\CLSImportExcel.cs" />
+    <Compile Include="Classes\CLSLog.cs" />
+    <Compile Include="Classes\CLSMail.cs" />
+    <Compile Include="Classes\CLSParameters.cs" />
+    <Compile Include="Classes\CLSPeriodSettings.cs" />
+    <Compile Include="Classes\CLSPrnForms.cs" />
+    <Compile Include="Classes\CLSProcedures.cs" />
+    <Compile Include="Classes\CLSStimul.cs" />
+    <Compile Include="Classes\CLSTableOperation.cs" />
+    <Compile Include="Classes\CLSTools.cs" />
+    <Compile Include="Classes\CLSUpdate.cs" />
+    <Compile Include="Classes\CLSWayBillOperation.cs" />
+    <Compile Include="Classes\Database\Column.cs" />
+    <Compile Include="Classes\Database\FMGDataBase.cs" />
+    <Compile Include="Classes\Database\Procedure.cs" />
+    <Compile Include="Classes\Database\Relation.cs" />
+    <Compile Include="Classes\Database\SqlTypes.cs" />
+    <Compile Include="Classes\Database\Table.cs" />
+    <Compile Include="Classes\FMGControlDesigner.cs" />
+    <Compile Include="Controls\FMGCheckedComboBoxFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FMGCheckedComboBoxFilter.designer.cs">
+      <DependentUpon>FMGCheckedComboBoxFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FMGGvariFilterControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FMGGvariFilterControl.designer.cs">
+      <DependentUpon>FMGGvariFilterControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GvariSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\GvariSelect.designer.cs">
+      <DependentUpon>GvariSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FMGCheckFilterControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FMGCheckFilterControl.designer.cs">
+      <DependentUpon>FMGCheckFilterControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FMGComboFilterControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FMGComboFilterControl.designer.cs">
+      <DependentUpon>FMGComboFilterControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FMGDateFilterControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FMGDateFilterControl.designer.cs">
+      <DependentUpon>FMGDateFilterControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FMGProdFilterControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FMGProdFilterControl.designer.cs">
+      <DependentUpon>FMGProdFilterControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FMGTextFilterControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FMGTextFilterControl.designer.cs">
+      <DependentUpon>FMGTextFilterControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProdSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ProdSelect.designer.cs">
+      <DependentUpon>ProdSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FAdgiliModz1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FAdgiliModz1Form.designer.cs">
+      <DependentUpon>FAdgiliModz1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FInvoices1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FInvoices1Form.designer.cs">
+      <DependentUpon>FInvoices1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FSalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FSalForm.designer.cs">
+      <DependentUpon>FSalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FShesShek1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FShesShek1Form.designer.cs">
+      <DependentUpon>FShesShek1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FDabr1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FDabr1Form.designer.cs">
+      <DependentUpon>FDabr1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FGas1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FGas1Form.designer.cs">
+      <DependentUpon>FGas1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FGegmaCarm1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FGegmaCarm1Form.designer.cs">
+      <DependentUpon>FGegmaCarm1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FQulaCvlilebaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FQulaCvlilebaForm.designer.cs">
+      <DependentUpon>FQulaCvlilebaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FVaucherSalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FVaucherSalForm.designer.cs">
+      <DependentUpon>FVaucherSalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FVaucherRealForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FVaucherRealForm.designer.cs">
+      <DependentUpon>FVaucherRealForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FXModzForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FXModzForm.designer.cs">
+      <DependentUpon>FXModzForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FShesXarjiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FShesXarjiForm.designer.cs">
+      <DependentUpon>FShesXarjiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FShes1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FShes1Form.designer.cs">
+      <DependentUpon>FShes1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FGadadeba1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FGadadeba1Form.designer.cs">
+      <DependentUpon>FGadadeba1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FXShemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FXShemForm.designer.cs">
+      <DependentUpon>FXShemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FXGasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FXGasForm.designer.cs">
+      <DependentUpon>FXGasForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FAgcera1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FAgcera1Form.designer.cs">
+      <DependentUpon>FAgcera1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FShem1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FShem1Form.designer.cs">
+      <DependentUpon>FShem1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FServiceRealForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FServiceRealForm.designer.cs">
+      <DependentUpon>FServiceRealForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FReal1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FReal1Form.designer.cs">
+      <DependentUpon>FReal1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FProekShek1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FProekShek1Form.designer.cs">
+      <DependentUpon>FProekShek1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FMomcShek1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FMomcShek1Form.designer.cs">
+      <DependentUpon>FMomcShek1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FModz1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FModz1Form.designer.cs">
+      <DependentUpon>FModz1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FMDabr1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FMDabr1Form.designer.cs">
+      <DependentUpon>FMDabr1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FGadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FGadForm.designer.cs">
+      <DependentUpon>FGadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FCarm1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FCarm1Form.designer.cs">
+      <DependentUpon>FCarm1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FProd1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FProd1Form.designer.cs">
+      <DependentUpon>FProd1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FGvariForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FGvariForm.designer.cs">
+      <DependentUpon>FGvariForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindForms\FProdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindForms\FProdForm.designer.cs">
+      <DependentUpon>FProdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceForms\ChangeSelectedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceForms\ChangeSelectedForm.designer.cs">
+      <DependentUpon>ChangeSelectedForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceForms\ImportFromExcelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceForms\ImportFromExcelForm.Designer.cs">
+      <DependentUpon>ImportFromExcelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceForms\UpdateInsertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceForms\UpdateInsertForm.designer.cs">
+      <DependentUpon>UpdateInsertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceForms\CreateParamsini.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceForms\CreateParamsini.designer.cs">
+      <DependentUpon>CreateParamsini.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceForms\CameraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceForms\CameraForm.designer.cs">
+      <DependentUpon>CameraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceForms\ErrorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceForms\ErrorDialog.designer.cs">
+      <DependentUpon>ErrorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceForms\FMGCustomizationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceForms\FMGCustomizationForm.designer.cs">
+      <DependentUpon>FMGCustomizationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceForms\GridLayoutOperations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceForms\GridLayoutOperations.designer.cs">
+      <DependentUpon>GridLayoutOperations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceForms\PanelLayoutOperations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceForms\PanelLayoutOperations.designer.cs">
+      <DependentUpon>PanelLayoutOperations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceForms\PivotTableSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceForms\PivotTableSettingsForm.designer.cs">
+      <DependentUpon>PivotTableSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceForms\PTRowsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceForms\PTRowsForm.designer.cs">
+      <DependentUpon>PTRowsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceForms\SQLExecuteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceForms\SQLExecuteForm.designer.cs">
+      <DependentUpon>SQLExecuteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceForms\WaitngForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceForms\WaitngForm.designer.cs">
+      <DependentUpon>WaitngForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\IFMGFindControl.cs" />
+    <Compile Include="Interfaces\ISelect.cs" />
+    <Compile Include="OtherForms\Change1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\Change1Form.designer.cs">
+      <DependentUpon>Change1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\ChangeIdProdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\ChangeIdProdForm.designer.cs">
+      <DependentUpon>ChangeIdProdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\CheckNashtiAgceraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\CheckNashtiAgceraForm.designer.cs">
+      <DependentUpon>CheckNashtiAgceraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\AddMultiGegmaCarm2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\AddMultiGegmaCarm2Form.designer.cs">
+      <DependentUpon>AddMultiGegmaCarm2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\DailyFees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\DailyFees.Designer.cs">
+      <DependentUpon>DailyFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\FinishOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\FinishOperation.Designer.cs">
+      <DependentUpon>FinishOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\GenerateSascoriFormNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\GenerateSascoriFormNew.Designer.cs">
+      <DependentUpon>GenerateSascoriFormNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\InsertToActionsProdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\InsertToActionsProdForm.designer.cs">
+      <DependentUpon>InsertToActionsProdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\ImportGegmaCarmToModzForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\ImportGegmaCarmToModzForm.designer.cs">
+      <DependentUpon>ImportGegmaCarmToModzForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\ImportGegmaCarmToCarm1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\ImportGegmaCarmToCarm1Form.designer.cs">
+      <DependentUpon>ImportGegmaCarmToCarm1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\GenerateAllShesShekForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\GenerateAllShesShekForm.designer.cs">
+      <DependentUpon>GenerateAllShesShekForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\GenerateShesShekForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\GenerateShesShekForm.designer.cs">
+      <DependentUpon>GenerateShesShekForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\CreateMissingCnobari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\CreateMissingCnobari.designer.cs">
+      <DependentUpon>CreateMissingCnobari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\DeleteReferencesFromAgceraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\DeleteReferencesFromAgceraForm.Designer.cs">
+      <DependentUpon>DeleteReferencesFromAgceraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\ExportDataToExcelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\ExportDataToExcelForm.Designer.cs">
+      <DependentUpon>ExportDataToExcelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\GenerateMomcShekForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\GenerateMomcShekForm.designer.cs">
+      <DependentUpon>GenerateMomcShekForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\GenerateShesTanxaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\GenerateShesTanxaForm.Designer.cs">
+      <DependentUpon>GenerateShesTanxaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\ImportFromExcelOldForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\ImportFromExcelOldForm.designer.cs">
+      <DependentUpon>ImportFromExcelOldForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\ImportRealToCarmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\ImportRealToCarmForm.Designer.cs">
+      <DependentUpon>ImportRealToCarmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\ImportGegmaCarmToProekShekForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\ImportGegmaCarmToProekShekForm.designer.cs">
+      <DependentUpon>ImportGegmaCarmToProekShekForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\GenerateSascoriForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\GenerateSascoriForm.designer.cs">
+      <DependentUpon>GenerateSascoriForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\ImportGadadebaToRealForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\ImportGadadebaToRealForm.designer.cs">
+      <DependentUpon>ImportGadadebaToRealForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\ImportMomcShekToShesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\ImportMomcShekToShesForm.designer.cs">
+      <DependentUpon>ImportMomcShekToShesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\AddMultiProekShek2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\AddMultiProekShek2Form.designer.cs">
+      <DependentUpon>AddMultiProekShek2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\ProdBarcodesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\ProdBarcodesForm.Designer.cs">
+      <DependentUpon>ProdBarcodesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\ReplaceProdInAgceraFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\ReplaceProdInAgceraFrom.Designer.cs">
+      <DependentUpon>ReplaceProdInAgceraFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\SearchGasProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\SearchGasProd.Designer.cs">
+      <DependentUpon>SearchGasProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\SetProdQulaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\SetProdQulaForm.designer.cs">
+      <DependentUpon>SetProdQulaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\ShrobaAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\ShrobaAddForm.designer.cs">
+      <DependentUpon>ShrobaAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\DBClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parameters\ProceduresClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PrintForms\prnAreaByOrg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintForms\prnAreaByOrg.designer.cs">
+      <DependentUpon>prnAreaByOrg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintForms\prnProdBaratiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintForms\prnProdBaratiForm.designer.cs">
+      <DependentUpon>prnProdBaratiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintForms\prnTBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintForms\prnTBForm.designer.cs">
+      <DependentUpon>prnTBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintForms\prnNashtiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintForms\prnNashtiForm.designer.cs">
+      <DependentUpon>prnNashtiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\FullDaxurvaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\FullDaxurvaForm.designer.cs">
+      <DependentUpon>FullDaxurvaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WayBill\CheckWaybillsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WayBill\CheckWaybillsForm.designer.cs">
+      <DependentUpon>CheckWaybillsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WayBill\ImportWayBillToMDabrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WayBill\ImportWayBillToMDabrForm.designer.cs">
+      <DependentUpon>ImportWayBillToMDabrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\GenerateRealForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\GenerateRealForm.designer.cs">
+      <DependentUpon>GenerateRealForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\ExportSeveralTablesToExcelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\ExportSeveralTablesToExcelForm.designer.cs">
+      <DependentUpon>ExportSeveralTablesToExcelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\ExportShekToModz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\ExportShekToModz.Designer.cs">
+      <DependentUpon>ExportShekToModz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\GenerateShesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\GenerateShesForm.designer.cs">
+      <DependentUpon>GenerateShesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\InsertToCarmFromCalcForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\InsertToCarmFromCalcForm.designer.cs">
+      <DependentUpon>InsertToCarmFromCalcForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\SetCalcFasiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\SetCalcFasiForm.designer.cs">
+      <DependentUpon>SetCalcFasiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherForms\SetProdFasiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherForms\SetProdFasiForm.designer.cs">
+      <DependentUpon>SetProdFasiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="packages.config" />
+    <None Include="Resources\pielabelsdatalabels2_32x32.png" />
+    <None Include="Resources\sortgroupfooter_32x32.png" />
+    <None Include="Resources\freezepanes_32x32.png" />
+    <EmbeddedResource Include="AddForms\AddAdminCnobariForm.resx">
+      <DependentUpon>AddAdminCnobariForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddAllForm.resx">
+      <DependentUpon>AddAllForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddCompanyForm.resx">
+      <DependentUpon>AddCompanyForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddInvoices1Form.resx">
+      <DependentUpon>AddInvoices1Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddGas1Form.resx">
+      <DependentUpon>AddGas1Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddInvoices2Form.resx">
+      <DependentUpon>AddInvoices2Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddOrgProdForm.resx">
+      <DependentUpon>AddOrgProdForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddGas2Form.resx">
+      <DependentUpon>AddGas2Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddOrgServicesForm.resx">
+      <DependentUpon>AddOrgServicesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddOrgForm.resx">
+      <DependentUpon>AddOrgForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddMdzForm.resx">
+      <DependentUpon>AddMdzForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddMISubForm.resx">
+      <DependentUpon>AddMISubForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddModz1Form.resx">
+      <DependentUpon>AddModz1Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddProekForm.resx">
+      <DependentUpon>AddProekForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddSalForm.resx">
+      <DependentUpon>AddSalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddServiceRealForm.resx">
+      <DependentUpon>AddServiceRealForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddShem1Form.resx">
+      <DependentUpon>AddShem1Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddShem2Form.resx">
+      <DependentUpon>AddShem2Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddZeddAutoForm.resx">
+      <DependentUpon>AddZeddAutoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddAgcera1Form.resx">
+      <DependentUpon>AddAgcera1Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddAgcera2Form.resx">
+      <DependentUpon>AddAgcera2Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddModz2Form.resx">
+      <DependentUpon>AddModz2Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddAgceraNashtiForm.resx">
+      <DependentUpon>AddAgceraNashtiForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddAgceraPreNashtiForm.resx">
+      <DependentUpon>AddAgceraPreNashtiForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AEDForms\AdminCnobariForm.resx">
+      <DependentUpon>AdminCnobariForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AEDForms\AEDAllForm.resx">
+      <DependentUpon>AEDAllForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AEDForms\CompanyForm.resx">
+      <DependentUpon>CompanyForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AEDForms\Agcera1Form.resx">
+      <DependentUpon>Agcera1Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AEDForms\Gas1Form.resx">
+      <DependentUpon>Gas1Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AEDForms\MISubForm.resx">
+      <DependentUpon>MISubForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AEDForms\MdzForm.resx">
+      <DependentUpon>MdzForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AEDForms\SalForm.resx">
+      <DependentUpon>SalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AEDForms\ServiceRealForm.resx">
+      <DependentUpon>ServiceRealForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AEDForms\ZeddAutoForm.resx">
+      <DependentUpon>ZeddAutoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AEDForms\ProekForm.resx">
+      <DependentUpon>ProekForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AEDForms\Invoices1Form.resx">
+      <DependentUpon>Invoices1Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AEDForms\OrgForm.resx">
+      <DependentUpon>OrgForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AEDForms\Modz1Form.resx">
+      <DependentUpon>Modz1Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AEDForms\Shem1Form.resx">
+      <DependentUpon>Shem1Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FMGCheckedComboBoxFilter.resx">
+      <DependentUpon>FMGCheckedComboBoxFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FMGGvariFilterControl.resx">
+      <DependentUpon>FMGGvariFilterControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\GvariSelect.resx">
+      <DependentUpon>GvariSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FMGCheckFilterControl.resx">
+      <DependentUpon>FMGCheckFilterControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FMGComboFilterControl.resx">
+      <DependentUpon>FMGComboFilterControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FMGDateFilterControl.resx">
+      <DependentUpon>FMGDateFilterControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FMGProdFilterControl.resx">
+      <DependentUpon>FMGProdFilterControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FMGTextFilterControl.resx">
+      <DependentUpon>FMGTextFilterControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ProdSelect.resx">
+      <DependentUpon>ProdSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FAdgiliModz1Form.resx">
+      <DependentUpon>FAdgiliModz1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FInvoices1Form.resx">
+      <DependentUpon>FInvoices1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FSalForm.resx">
+      <DependentUpon>FSalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FShesShek1Form.resx">
+      <DependentUpon>FShesShek1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FDabr1Form.resx">
+      <DependentUpon>FDabr1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FGas1Form.resx">
+      <DependentUpon>FGas1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FGegmaCarm1Form.resx">
+      <DependentUpon>FGegmaCarm1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FQulaCvlilebaForm.resx">
+      <DependentUpon>FQulaCvlilebaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FVaucherSalForm.resx">
+      <DependentUpon>FVaucherSalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FVaucherRealForm.resx">
+      <DependentUpon>FVaucherRealForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FXModzForm.resx">
+      <DependentUpon>FXModzForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FShesXarjiForm.resx">
+      <DependentUpon>FShesXarjiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FShes1Form.resx">
+      <DependentUpon>FShes1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FGadadeba1Form.resx">
+      <DependentUpon>FGadadeba1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FXShemForm.resx">
+      <DependentUpon>FXShemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FXGasForm.resx">
+      <DependentUpon>FXGasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FAgcera1Form.resx">
+      <DependentUpon>FAgcera1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FShem1Form.resx">
+      <DependentUpon>FShem1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FServiceRealForm.resx">
+      <DependentUpon>FServiceRealForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FReal1Form.resx">
+      <DependentUpon>FReal1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FProekShek1Form.resx">
+      <DependentUpon>FProekShek1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FMomcShek1Form.resx">
+      <DependentUpon>FMomcShek1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FModz1Form.resx">
+      <DependentUpon>FModz1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FMDabr1Form.resx">
+      <DependentUpon>FMDabr1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FGadForm.resx">
+      <DependentUpon>FGadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FCarm1Form.resx">
+      <DependentUpon>FCarm1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FProd1Form.resx">
+      <DependentUpon>FProd1Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FGvariForm.resx">
+      <DependentUpon>FGvariForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindForms\FProdForm.resx">
+      <DependentUpon>FProdForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceForms\ChangeSelectedForm.resx">
+      <DependentUpon>ChangeSelectedForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceForms\ImportFromExcelForm.resx">
+      <DependentUpon>ImportFromExcelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceForms\UpdateInsertForm.resx">
+      <DependentUpon>UpdateInsertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceForms\CreateParamsini.resx">
+      <DependentUpon>CreateParamsini.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceForms\CameraForm.resx">
+      <DependentUpon>CameraForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceForms\ErrorDialog.resx">
+      <DependentUpon>ErrorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceForms\FMGCustomizationForm.resx">
+      <DependentUpon>FMGCustomizationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceForms\GridLayoutOperations.resx">
+      <DependentUpon>GridLayoutOperations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceForms\PanelLayoutOperations.resx">
+      <DependentUpon>PanelLayoutOperations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceForms\PivotTableSettingsForm.resx">
+      <DependentUpon>PivotTableSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceForms\PTRowsForm.resx">
+      <DependentUpon>PTRowsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceForms\SQLExecuteForm.resx">
+      <DependentUpon>SQLExecuteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfaceForms\WaitngForm.resx">
+      <DependentUpon>WaitngForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\Change1Form.resx">
+      <DependentUpon>Change1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\ChangeIdProdForm.resx">
+      <DependentUpon>ChangeIdProdForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\CheckNashtiAgceraForm.resx">
+      <DependentUpon>CheckNashtiAgceraForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\AddMultiGegmaCarm2Form.resx">
+      <DependentUpon>AddMultiGegmaCarm2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\DailyFees.resx">
+      <DependentUpon>DailyFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\FinishOperation.resx">
+      <DependentUpon>FinishOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\GenerateSascoriFormNew.resx">
+      <DependentUpon>GenerateSascoriFormNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\InsertToActionsProdForm.resx">
+      <DependentUpon>InsertToActionsProdForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\ImportGegmaCarmToModzForm.resx">
+      <DependentUpon>ImportGegmaCarmToModzForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\ImportGegmaCarmToCarm1Form.resx">
+      <DependentUpon>ImportGegmaCarmToCarm1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\GenerateAllShesShekForm.resx">
+      <DependentUpon>GenerateAllShesShekForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\GenerateShesShekForm.resx">
+      <DependentUpon>GenerateShesShekForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\CreateMissingCnobari.resx">
+      <DependentUpon>CreateMissingCnobari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\DeleteReferencesFromAgceraForm.resx">
+      <DependentUpon>DeleteReferencesFromAgceraForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\ExportDataToExcelForm.resx">
+      <DependentUpon>ExportDataToExcelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\GenerateMomcShekForm.resx">
+      <DependentUpon>GenerateMomcShekForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\GenerateShesTanxaForm.resx">
+      <DependentUpon>GenerateShesTanxaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\ImportFromExcelOldForm.resx">
+      <DependentUpon>ImportFromExcelOldForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\ImportRealToCarmForm.resx">
+      <DependentUpon>ImportRealToCarmForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\ImportGegmaCarmToProekShekForm.resx">
+      <DependentUpon>ImportGegmaCarmToProekShekForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\GenerateSascoriForm.resx">
+      <DependentUpon>GenerateSascoriForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\ImportGadadebaToRealForm.resx">
+      <DependentUpon>ImportGadadebaToRealForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\ImportMomcShekToShesForm.resx">
+      <DependentUpon>ImportMomcShekToShesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\AddMultiProekShek2Form.resx">
+      <DependentUpon>AddMultiProekShek2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\ProdBarcodesForm.resx">
+      <DependentUpon>ProdBarcodesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\ReplaceProdInAgceraFrom.resx">
+      <DependentUpon>ReplaceProdInAgceraFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\SearchGasProd.resx">
+      <DependentUpon>SearchGasProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\SetProdQulaForm.resx">
+      <DependentUpon>SetProdQulaForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\ShrobaAddForm.resx">
+      <DependentUpon>ShrobaAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintForms\prnAreaByOrg.resx">
+      <DependentUpon>prnAreaByOrg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintForms\prnProdBaratiForm.resx">
+      <DependentUpon>prnProdBaratiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintForms\prnTBForm.resx">
+      <DependentUpon>prnTBForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintForms\prnNashtiForm.resx">
+      <DependentUpon>prnNashtiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\FullDaxurvaForm.resx">
+      <DependentUpon>FullDaxurvaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WayBill\CheckWaybillsForm.resx">
+      <DependentUpon>CheckWaybillsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WayBill\ImportWayBillToMDabrForm.resx">
+      <DependentUpon>ImportWayBillToMDabrForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\GenerateRealForm.resx">
+      <DependentUpon>GenerateRealForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\ExportSeveralTablesToExcelForm.resx">
+      <DependentUpon>ExportSeveralTablesToExcelForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\ExportShekToModz.resx">
+      <DependentUpon>ExportShekToModz.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\GenerateShesForm.resx">
+      <DependentUpon>GenerateShesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\InsertToCarmFromCalcForm.resx">
+      <DependentUpon>InsertToCarmFromCalcForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\SetCalcFasiForm.resx">
+      <DependentUpon>SetCalcFasiForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherForms\SetProdFasiForm.resx">
+      <DependentUpon>SetProdFasiForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\AddParamsForm.resx">
+      <DependentUpon>AddParamsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\AddUserForm.resx">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\DaxurvaForm.resx">
+      <DependentUpon>DaxurvaForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\DelUserForm.resx">
+      <DependentUpon>DelUserForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\EditUserForm.resx">
+      <DependentUpon>EditUserForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\GaxsnaForm.resx">
+      <DependentUpon>GaxsnaForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\RegistrationForm.resx">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\SetUserPermissionsForm.resx">
+      <DependentUpon>SetUserPermissionsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Tools\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\AboutForm.designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\AddParamsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\AddParamsForm.designer.cs">
+      <DependentUpon>AddParamsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\AddUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\AddUserForm.designer.cs">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\DaxurvaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\DaxurvaForm.designer.cs">
+      <DependentUpon>DaxurvaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\DelUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\DelUserForm.designer.cs">
+      <DependentUpon>DelUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\EditUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\EditUserForm.designer.cs">
+      <DependentUpon>EditUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\GaxsnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\GaxsnaForm.designer.cs">
+      <DependentUpon>GaxsnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\RegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\RegistrationForm.designer.cs">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\SetUserPermissionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\SetUserPermissionsForm.designer.cs">
+      <DependentUpon>SetUserPermissionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WayBill\CheckShesWaybillsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WayBill\CheckShesWaybillsForm.designer.cs">
+      <DependentUpon>CheckShesWaybillsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WayBill\ImportWayBillToModzForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WayBill\ImportWayBillToModzForm.designer.cs">
+      <DependentUpon>ImportWayBillToModzForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WayBill\ImportWayBillToRealForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WayBill\ImportWayBillToRealForm.designer.cs">
+      <DependentUpon>ImportWayBillToRealForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WayBill\ImportWayBillToShesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WayBill\ImportWayBillToShesForm.designer.cs">
+      <DependentUpon>ImportWayBillToShesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WayBill\RSInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WayBill\RSInformationForm.designer.cs">
+      <DependentUpon>RSInformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WayBill\WayBillUsersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WayBill\WayBillUsersForm.designer.cs">
+      <DependentUpon>WayBillUsersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ge.rs.services\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="licenses.licx" />
+    <EmbeddedResource Include="WayBill\CheckShesWaybillsForm.resx">
+      <DependentUpon>CheckShesWaybillsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WayBill\ImportWayBillToModzForm.resx">
+      <DependentUpon>ImportWayBillToModzForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WayBill\ImportWayBillToRealForm.resx">
+      <DependentUpon>ImportWayBillToRealForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WayBill\ImportWayBillToShesForm.resx">
+      <DependentUpon>ImportWayBillToShesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WayBill\RSInformationForm.resx">
+      <DependentUpon>RSInformationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WayBill\WayBillUsersForm.resx">
+      <DependentUpon>WayBillUsersForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://services.rs.ge/WayBillService/WayBillService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ge.rs.services\</RelPath>
+      <UpdateFromURL>http://services.rs.ge/WayBillService/WayBillService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SBS_Market_ge_rs_services_WayBills</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tableofcontent_16x16.png" />
+    <None Include="Resources\tableofcontent_32x32.png" />
+    <None Include="Resources\FMG-Soft.png" />
+    <None Include="Resources\publish_32x32.png" />
+    <None Include="Resources\publish_16x16.png" />
+    <None Include="Resources\historyitem_32x322.png" />
+    <None Include="Resources\historyitem_16x16.png" />
+    <None Include="Resources\switchrowcolumn_32x32.png" />
+    <None Include="Resources\switchrowcolumn_16x16.png" />
+    <None Include="Resources\geopoint_16x161.png" />
+    <None Include="Resources\geopoint_32x32.png" />
+    <None Include="Resources\home_16x161.png" />
+    <None Include="Resources\home_32x321.png" />
+    <None Include="Resources\financial_16x161.png" />
+    <None Include="Resources\financial_32x322.png" />
+    <None Include="Resources\MarketIcon.png" />
+    <None Include="Resources\usergroup_16x161.png" />
+    <None Include="Resources\usergroup_32x321.png" />
+    <None Include="Resources\geopoint_16x16.png" />
+    <None Include="Resources\RS.png" />
+    <None Include="Resources\transit_16x16.png" />
+    <None Include="Resources\lookup&amp;reference_16x16.png" />
+    <None Include="Resources\showformulas_16x16.png" />
+    <None Include="Resources\save_16x16.png" />
+    <None Include="Resources\today_16x16.png" />
+    <None Include="Resources\today_32x32.png" />
+    <None Include="Resources\selectall_16x16.png" />
+    <None Include="Resources\selectall_32x32.png" />
+    <None Include="Resources\radarwithoutmarkers_16x16.png" />
+    <None Include="Resources\radarwithoutmarkers_32x32.png" />
+    <None Include="Resources\recurrence_32x323.png" />
+    <None Include="Resources\recurrence_16x161.png" />
+    <None Include="Resources\removeitem_32x328.png" />
+    <None Include="Resources\removeitem_16x164.png" />
+    <None Include="Resources\financial_16x16.png" />
+    <None Include="Resources\financial_32x321.png" />
+    <None Include="Resources\home_16x16.png" />
+    <None Include="Resources\home_32x32.png" />
+    <None Include="Resources\geopointmap_16x16.png" />
+    <None Include="Resources\geopointmap_32x32.png" />
+    <None Include="Resources\printsortdesc_16x16.png" />
+    <None Include="Resources\printsortdesc_32x32.png" />
+    <None Include="Resources\insert_16x16.png" />
+    <None Include="Resources\insert_32x32.png" />
+    <None Include="Resources\withtextwrapping_topright_16x16.png" />
+    <None Include="Resources\withtextwrapping_topright_32x32.png" />
+    <None Include="Resources\gradientorangedatabar_16x16.png" />
+    <None Include="Resources\gradientorangedatabar_32x32.png" />
+    <None Include="Resources\logout_32x32.png" />
+    <None Include="Resources\AED_ImportFromExcel_32x32.png" />
+    <None Include="Resources\Versions.png" />
+    <None Include="Resources\stop.png" />
+    <None Include="Resources\usergroup_32x32.png" />
+    <None Include="Resources\usergroup_16x16.png" />
+    <None Include="Resources\User_Remove.png" />
+    <None Include="Resources\undo_32x32.png" />
+    <None Include="Resources\Truck_32.png" />
+    <None Include="Resources\team_32x32.png" />
+    <None Include="Resources\team_16x16.png" />
+    <None Include="Resources\Table_refresh.png" />
+    <None Include="Resources\table_32x32.png" />
+    <None Include="Resources\table_16x16.png" />
+    <None Include="Resources\switchtimescalesto_32x32.png" />
+    <None Include="Resources\switchtimescalesto_16x16.png" />
+    <None Include="Resources\statistical_32x32.png" />
+    <None Include="Resources\statistical_16x16.png" />
+    <None Include="Resources\shoppingcart_32x32.png" />
+    <None Include="Resources\search_icon.png" />
+    <None Include="Resources\Save-icon.png" />
+    <None Include="Resources\Save Cli.png" />
+    <None Include="Resources\salesperiodlifetime_32x32.png" />
+    <None Include="Resources\salesperiodlifetime_16x16.png" />
+    <None Include="Resources\salesanalysis_32x32.png" />
+    <None Include="Resources\salesanalysis_16x16.png" />
+    <None Include="Resources\sales_32x32.png" />
+    <None Include="Resources\sales_16x16.png" />
+    <None Include="Resources\safe_32.png" />
+    <None Include="Resources\RibbonPrintPreview_PageSetupDialog.png" />
+    <None Include="Resources\redo_32x32.png" />
+    <None Include="Resources\rangebar_32x32.png" />
+    <None Include="Resources\properties_32x32.png" />
+    <None Include="Resources\properties_16x16.png" />
+    <None Include="Resources\project_32x32.png" />
+    <None Include="Resources\project_16x16.png" />
+    <None Include="Resources\print_16x16.png" />
+    <None Include="Resources\previous_32x32.png" />
+    <None Include="Resources\previous_16x16.png" />
+    <None Include="Resources\preview_32x32.png" />
+    <None Include="Resources\pivot_16x16.png" />
+    <None Include="Resources\picturebox_32x32.png" />
+    <None Include="Resources\percentage_32x32.png" />
+    <None Include="Resources\percentage_16x16.png" />
+    <None Include="Resources\PayGiftCard.png" />
+    <None Include="Resources\packageproduct_32x32.png" />
+    <None Include="Resources\notes_32x32.png" />
+    <None Include="Resources\notes_16x16.png" />
+    <None Include="Resources\lemon-icon.png" />
+    <None Include="Resources\info_32x32.png" />
+    <None Include="Resources\info_16x16.png" />
+    <None Include="Resources\import-export-icon.png" />
+    <None Include="Resources\groupfieldcollection_32x32.png" />
+    <None Include="Resources\groupfieldcollection_16x16.png" />
+    <None Include="Resources\groupbyresource_32x32.png" />
+    <None Include="Resources\groupbyresource_16x16.png" />
+    <None Include="Resources\groupbynone_32x32.png" />
+    <None Include="Resources\groupbydate_32x32.png" />
+    <None Include="Resources\groupbydate_16x16.png" />
+    <None Include="Resources\forward_32x32.png" />
+    <None Include="Resources\forward_16x16.png" />
+    <None Include="Resources\find_16x16.png" />
+    <None Include="Resources\financial_32x32.png" />
+    <None Include="Resources\feeds_32x32.png" />
+    <None Include="Resources\feeds_16x16.png" />
+    <None Include="Resources\weightedpies_32x32.png" />
+    <None Include="Resources\Script-Save.png" />
+    <None Include="Resources\Script-Reset.png" />
+    <None Include="Resources\Script-Pause.png" />
+    <None Include="Resources\Script-Edit.png" />
+    <None Include="Resources\Script-2.png" />
+    <None Include="Resources\orderdetail_32x32.png" />
+    <None Include="Resources\indentincrease_32x32.png" />
+    <None Include="Resources\resetmodeldifferences_32x32.png" />
+    <None Include="Resources\multiplepages_32x32.png" />
+    <None Include="Resources\technology_32x32.png" />
+    <None Include="Resources\saledetalis_32x32.png" />
+    <None Include="Resources\showformulas_32x32.png" />
+    <None Include="Resources\suggestion_32x321.png" />
+    <None Include="Resources\suggestion_32x32.png" />
+    <None Include="Resources\pivot_32x32.png" />
+    <None Include="Resources\page_excel.png" />
+    <None Include="Resources\paperkind_a3.png" />
+    <None Include="Resources\replace_32x32.png" />
+    <None Include="Resources\image_32x32.png" />
+    <None Include="Resources\sendxls_32x32.png" />
+    <None Include="Resources\topbottomrules_32x32.png" />
+    <None Include="Resources\historyitem_32x321.png" />
+    <None Include="Resources\historyitem_32x32.png" />
+    <None Include="Resources\print_32x32.png" />
+    <None Include="Resources\stackedlayout_32x32.png" />
+    <None Include="Resources\find1.png" />
+    <None Include="Resources\find.png" />
+    <None Include="Resources\findbyid_32x32.png" />
+    <None Include="Resources\sortbyinvoice_16x16.png" />
+    <None Include="Resources\sortbyinvoice_32x32.png" />
+    <None Include="Resources\saveas_16x16.png" />
+    <None Include="Resources\saveas_32x321.png" />
+    <None Include="Resources\saveas_32x32.png" />
+    <None Include="Resources\saveandnew_16x16.png" />
+    <None Include="Resources\saveandnew_32x32.png" />
+    <None Include="Resources\Freeze_Column_Right.png" />
+    <None Include="Resources\Freeze_Column_Remove_All.png" />
+    <None Include="Resources\Freeze_Column_Remove.png" />
+    <None Include="Resources\Freeze_Column_Left.png" />
+    <None Include="Resources\reverssort_32x32.png" />
+    <None Include="Resources\fill_32x32.png" />
+    <None Include="Resources\up2_32x32.png" />
+    <None Include="Resources\gnc-download.png" />
+    <None Include="Resources\invoice_receipt.png" />
+    <None Include="Resources\Income.png" />
+    <None Include="Resources\money.png" />
+    <None Include="Resources\information-balloon.png" />
+    <None Include="Resources\Income_128x128.png" />
+    <None Include="Resources\Tree View.png" />
+    <None Include="Resources\unpack.png" />
+    <None Include="Resources\favorits.png" />
+    <None Include="Resources\Mdz.png" />
+    <None Include="Resources\Users1.png" />
+    <None Include="Resources\Tanam.png" />
+    <None Include="Resources\Salaro.png" />
+    <None Include="Resources\XShem.png" />
+    <None Include="Resources\XGas.png" />
+    <None Include="Resources\Gad.png" />
+    <None Include="Resources\Shes1.png" />
+    <None Include="Resources\Sal.png" />
+    <None Include="Resources\Real1.png" />
+    <None Include="Resources\SQL.png" />
+    <None Include="Resources\Update.png" />
+    <None Include="Resources\FullDaxurva.png" />
+    <None Include="Resources\Params.png" />
+    <None Include="Resources\UserPermission.png" />
+    <None Include="Resources\Users.png" />
+    <None Include="Resources\ImportWaybills.png" />
+    <None Include="Resources\Save.png" />
+    <None Include="Resources\PRC75.png" />
+    <None Include="Resources\FillById.png" />
+    <None Include="Resources\Find2.png" />
+    <None Include="Resources\ShekAutoGenerate.png" />
+    <None Include="Resources\UncheckAll.png" />
+    <None Include="Resources\GroupInsDelEdit.png" />
+    <None Include="Resources\UpdateWayBill.png" />
+    <None Include="Resources\ShrobaAdd.png" />
+    <None Include="Resources\SasZedd.png" />
+    <None Include="Resources\PrintRS.png" />
+    <None Include="Resources\PrintSelected.png" />
+    <None Include="Resources\ImportFromReal.png" />
+    <None Include="Resources\ImportWayBill.png" />
+    <None Include="Resources\FGChange.png" />
+    <None Include="Resources\SetFasi.png" />
+    <None Include="Resources\ImportPocket.png" />
+    <None Include="Resources\PrintBarCode.png" />
+    <None Include="Resources\XLSImport.png" />
+    <None Include="app.config" />
+    <None Include="Resources\bCheckZeddStatus.png" />
+    <None Include="Resources\bCopy.png" />
+    <None Include="Resources\bCopyWithDetails.png" />
+    <None Include="Resources\bDelete.png" />
+    <None Include="Resources\bDeleteWayBill.png" />
+    <None Include="Resources\bEdit.png" />
+    <None Include="Resources\bEndData.png" />
+    <None Include="Resources\bExportWayBill.png" />
+    <None Include="Resources\bFilterWithFindID.png" />
+    <None Include="Resources\bInsert.png" />
+    <None Include="Resources\bRefresh.png" />
+    <None Include="Resources\bSearch.png" />
+    <None Include="Resources\bPrintOrder.png" />
+    <None Include="Resources\bExcel.png" />
+    <None Include="Resources\ExportReal.png" />
+    <None Include="Resources\AutoCalc.png" />
+    <None Include="Resources\ExportShem.png" />
+    <None Include="Resources\ExportShes.png" />
+    <None Include="Resources\CheckAll.png" />
+    <None Include="Resources\ExportModz.png" />
+    <None Include="Resources\ClearDelReal.png" />
+    <None Include="Resources\Close.png" />
+    <None Include="Resources\Confirm.png" />
+    <None Include="Resources\EditUser.png" />
+    <None Include="Resources\DelUser1.png" />
+    <None Include="Resources\ConnectToRS.png" />
+    <None Include="Resources\Daxurva.png" />
+    <None Include="Resources\btnGaxsna.png" />
+    <None Include="Resources\Exit.png" />
+    <None Include="Resources\bookmark.png" />
+    <None Include="Resources\basket.png" />
+    <None Include="Resources\Agcera1.png" />
+    <None Include="Resources\Carm1.png" />
+    <None Include="Resources\CMessages.png" />
+    <None Include="Resources\btnProd.png" />
+    <None Include="Resources\btnGvari.png" />
+    <None Include="Resources\DelUSR.png" />
+    <None Include="Resources\Contact-Remove.png" />
+    <None Include="Resources\exchange.png" />
+    <None Include="Resources\Database-Open.png" />
+    <None Include="Resources\export_32x32.png" />
+    <None Include="Resources\expandcollapse_32x32.png" />
+    <None Include="Resources\close_32x32.png" />
+    <None Include="Resources\deletelist_32x32.png" />
+    <None Include="Resources\checkbox2_32x32.png" />
+    <None Include="Resources\barcode2_32x32.png" />
+    <None Include="Resources\barcode_32x32.png" />
+    <None Include="Resources\bosale_32x32.png" />
+    <None Include="Resources\addcalculatedfield_32x32.png" />
+    <None Include="Resources\addgroupfooter_32x32.png" />
+    <None Include="Resources\convert_32x32.png" />
+    <None Include="Resources\export.png" />
+    <None Include="Resources\attachment_32x32.png" />
+    <None Include="Resources\Complete-100.png" />
+    <None Include="Resources\Complete-50.png" />
+    <None Include="Resources\AED_Add_32x32.png" />
+    <None Include="Resources\AED_AddMulti_32x32.png" />
+    <None Include="Resources\AED_Close_32x32.png" />
+    <None Include="Resources\AED_Copy_32x32.png" />
+    <None Include="Resources\AED_CopyWithDetails_32x32.png" />
+    <None Include="Resources\AED_CustomizeGrid_32x32.png" />
+    <None Include="Resources\AED_Delete_32x32.png" />
+    <None Include="Resources\AED_Edit_32x32.png" />
+    <None Include="Resources\AED_ExportToXLS_32x32.png" />
+    <None Include="Resources\AED_Find_32x32.png" />
+    <None Include="Resources\AED_FindById_32x32.png" />
+    <None Include="Resources\AED_History_32x32.png" />
+    <None Include="Resources\AED_PanelLoad_32x32.png" />
+    <None Include="Resources\AED_Print_32x32.png" />
+    <None Include="Resources\AED_Refresh_32x32.png" />
+    <None Include="Resources\AED_RestoreLayout_32x32.png" />
+    <None Include="Resources\AED_SaveLayout_32x32.png" />
+    <None Include="Resources\Exclamation_Mark.png" />
+    <None Include="Resources\Arrow_split_down_32.png" />
+    <None Include="Resources\cleartablestyle_32x32.png" />
+    <None Include="Resources\accounting_16x16.png" />
+    <None Include="Resources\accounting_32x32.png" />
+    <None Include="Resources\Ammy32_32.png" />
+    <None Include="Resources\AppointmentGreen.png" />
+    <None Include="Resources\AppointmentOrrange.png" />
+    <None Include="Resources\backward_16x16.png" />
+    <None Include="Resources\backward_32x32.png" />
+    <None Include="Resources\Balance.png" />
+    <None Include="Resources\barcode_16x16.png" />
+    <None Include="Resources\Birthday_icon.png" />
+    <None Include="Resources\bocustomer_16x16.png" />
+    <None Include="Resources\bocustomer_32x32.png" />
+    <None Include="Resources\bolocalization_16x16.png" />
+    <None Include="Resources\bolocalization_32x32.png" />
+    <None Include="Resources\boposition_16x16.png" />
+    <None Include="Resources\boposition_32x32.png" />
+    <None Include="Resources\boproduct_16x16.png" />
+    <None Include="Resources\boproduct_32x32.png" />
+    <None Include="Resources\boproductgroup_16x16.png" />
+    <None Include="Resources\boproductgroup_32x32.png" />
+    <None Include="Resources\bosale_16x16.png" />
+    <None Include="Resources\bosaleitem_16x16.png" />
+    <None Include="Resources\bosaleitem_16x161.png" />
+    <None Include="Resources\bosaleitem_32x32.png" />
+    <None Include="Resources\bouser_16x16.png" />
+    <None Include="Resources\bouser_32x32.png" />
+    <None Include="Resources\btnActive.Image.png" />
+    <None Include="Resources\btnActiveAll.Image.png" />
+    <None Include="Resources\btnDaxurva.Image.png" />
+    <None Include="Resources\btnGaxsna.Image.png" />
+    <None Include="Resources\btnPrintSelected.Image.png" />
+    <None Include="Resources\btnSetMomc.Image.png" />
+    <None Include="Resources\btnSetShesFasi.Image.png" />
+    <None Include="Resources\calculatesheet_16x16.png" />
+    <None Include="Resources\calculatesheet_32x32.png" />
+    <None Include="Resources\calendar_16x16.png" />
+    <None Include="Resources\calendar_32x32.png" />
+    <None Include="Resources\Close Cli.png" />
+    <None Include="Resources\currency_16x16.png" />
+    <None Include="Resources\currency_32x32.png" />
+    <None Include="Resources\currency2_32x32.png" />
+    <None Include="Resources\Customer.png" />
+    <None Include="Resources\customer_16x16.png" />
+    <None Include="Resources\customer_32x32.png" />
+    <None Include="Resources\disk-multiple-icon.png" />
+    <None Include="Resources\driving_16x16.png" />
+    <None Include="Resources\driving_32x32.png" />
+    <None Include="Resources\editcontact_16x16.png" />
+    <None Include="Resources\editcontact_32x32.png" />
+    <None Include="Resources\Email_icon.png" />
+    <None Include="Resources\bt_play.png" />
+    <None Include="Resources\AED_txtCalcEdit.png" />
+    <None Include="Resources\AED_txtData_16x16.png" />
+    <None Include="Resources\AED_InValid_16x16.png" />
+    <None Include="Resources\AED_IsValid_16x16.png" />
+    <None Include="Resources\AED_ChangeSelected_16x16.png" />
+    <None Include="Resources\bopivotchart_32x32.png" />
+    <None Include="Resources\bopivotchart_16x16.png" />
+    <None Include="Resources\addgroupheader_32x32.png" />
+    <None Include="Resources\addgroupheader_16x16.png" />
+    <None Include="Resources\addheader_32x32.png" />
+    <None Include="Resources\addheader_16x16.png" />
+    <None Include="Resources\6.png" />
+    <None Include="Resources\61.png" />
+    <None Include="Resources\drilldownonseries_chart_32x32.png" />
+    <Content Include="History\History_2020.07.08.sql" />
+    <Content Include="History\Histroy_2019.05.26_ver_2.4.12.sql" />
+    <Content Include="icon.ico" />
+    <None Include="Resources\additem_16x16.png" />
+    <None Include="Resources\additem_32x322.png" />
+    <None Include="Resources\edit_16x16.png" />
+    <None Include="Resources\edit_32x322.png" />
+    <None Include="Resources\exporttoxls_16x16.png" />
+    <None Include="Resources\announcement_32x32.png" />
+    <None Include="Resources\announcement_16x16.png" />
+    <None Include="Resources\botask_32x32.png" />
+    <None Include="Resources\botask_16x16.png" />
+    <None Include="Resources\adateoccurring_32x32.png" />
+    <None Include="Resources\adateoccurring_16x16.png" />
+    <None Include="Resources\bocontact_32x32.png" />
+    <None Include="Resources\bocontact_16x16.png" />
+    <None Include="Resources\bosale_32x321.png" />
+    <None Include="Resources\bosale_16x161.png" />
+    <None Include="Resources\boreport2_32x32.png" />
+    <None Include="Resources\boreport2_16x16.png" />
+    <None Include="Resources\calculatesheet_32x321.png" />
+    <None Include="Resources\calculatesheet_16x161.png" />
+    <None Include="Resources\calculatesheet_32x322.png" />
+    <None Include="Resources\calculatesheet_16x162.png" />
+    <None Include="Resources\botask_32x321.png" />
+    <None Include="Resources\botask_16x161.png" />
+    <None Include="Resources\calculatesheet_32x323.png" />
+    <None Include="Resources\calculatesheet_16x163.png" />
+    <None Include="Resources\add_16x16.png" />
+    <None Include="Resources\apply_16x16.png" />
+    <None Include="Resources\cancel_16x16.png" />
+    <None Include="Resources\botask_16x162.png" />
+    <None Include="Resources\bocountry_16x16.png" />
+    <None Include="Resources\boproductgroup_16x161.png" />
+    <None Include="Resources\add_16x161.png" />
+    <None Include="Resources\apply_16x161.png" />
+    <None Include="Resources\cancel_16x161.png" />
+    <None Include="Resources\checkbuttons_32x32.png" />
+    <None Include="Resources\checkbuttons_16x16.png" />
+    <None Include="Resources\conditionalformatting_32x32.png" />
+    <None Include="Resources\conditionalformatting_16x16.png" />
+    <None Include="Resources\bocountry_32x32.png" />
+    <None Include="Resources\bocountry_16x161.png" />
+    <None Include="Resources\additem_16x161.png" />
+    <None Include="Resources\additem_32x323.png" />
+    <None Include="Resources\additem_16x162.png" />
+    <None Include="Resources\additem_32x324.png" />
+    <None Include="Resources\edit_16x161.png" />
+    <None Include="Resources\edit_32x323.png" />
+    <None Include="Resources\deletelist_16x16.png" />
+    <None Include="Resources\deletelist_32x321.png" />
+    <None Include="Resources\addfile_16x16.png" />
+    <None Include="Resources\addfile_32x32.png" />
+    <None Include="Resources\exporttoxls_16x161.png" />
+    <None Include="Resources\exporttoxls_32x32.png" />
+    <Content Include="Libs\Aspose.Cells.dll" />
+    <Content Include="Libs\DevExpress.Charts.v19.1.Core.dll" />
+    <Content Include="Libs\DevExpress.Data.v19.1.dll" />
+    <Content Include="Libs\DevExpress.Images.v19.1.dll" />
+    <Content Include="Libs\DevExpress.Office.v19.1.Core.dll" />
+    <Content Include="Libs\DevExpress.Pdf.v19.1.Core.dll" />
+    <Content Include="Libs\DevExpress.PivotGrid.v19.1.Core.dll" />
+    <Content Include="Libs\DevExpress.Printing.v19.1.Core.dll" />
+    <Content Include="Libs\DevExpress.RichEdit.v19.1.Core.dll" />
+    <Content Include="Libs\DevExpress.Sparkline.v19.1.Core.dll" />
+    <Content Include="Libs\DevExpress.Utils.v19.1.dll" />
+    <Content Include="Libs\DevExpress.Utils.v19.1.UI.dll" />
+    <Content Include="Libs\DevExpress.XtraBars.v19.1.dll" />
+    <Content Include="Libs\DevExpress.XtraCharts.v19.1.dll" />
+    <Content Include="Libs\DevExpress.XtraCharts.v19.1.UI.dll" />
+    <Content Include="Libs\DevExpress.XtraCharts.v19.1.Wizard.dll" />
+    <Content Include="Libs\DevExpress.XtraEditors.v19.1.dll" />
+    <Content Include="Libs\DevExpress.XtraGrid.v19.1.dll" />
+    <Content Include="Libs\DevExpress.XtraLayout.v19.1.dll" />
+    <Content Include="Libs\DevExpress.XtraNavBar.v19.1.dll" />
+    <Content Include="Libs\DevExpress.XtraPivotGrid.v19.1.dll" />
+    <Content Include="Libs\DevExpress.XtraPrinting.v19.1.dll" />
+    <Content Include="Libs\DevExpress.XtraRichEdit.v19.1.dll" />
+    <Content Include="Libs\DevExpress.XtraTreeList.v19.1.dll" />
+    <Content Include="Libs\DevExpress.XtraVerticalGrid.v19.1.dll" />
+    <Content Include="Libs\PresentationCore.dll" />
+    <Content Include="Libs\Stimulsoft.Base.dll" />
+    <Content Include="Libs\Stimulsoft.Data.dll" />
+    <Content Include="Libs\Stimulsoft.Report.dll" />
+    <None Include="Logo.jpg" />
+    <Content Include="Resources\ExpShem.png" />
+    <None Include="Web References\ge.rs.services\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ge.rs.services\WayBillService.disco" />
+    <None Include="Web References\ge.rs.services\WayBillService.wsdl" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FSavePTlayout.png" />
+    <None Include="Resources\FSaveDGlayout.png" />
+    <None Include="Resources\FRestorePTlayout.png" />
+    <None Include="Resources\FRestoreDGlayout.png" />
+    <None Include="Resources\FPrint.png" />
+    <None Include="Resources\FFind.png" />
+    <None Include="Resources\FExcel.png" />
+    <None Include="Resources\GridViewSettings.png" />
+    <None Include="Resources\PivotTableSettings.png" />
+    <None Include="Resources\HideSearchPanel.png" />
+    <None Include="Resources\ExpExcel.png" />
+    <None Include="Resources\ExpGas.png" />
+    <None Include="Resources\Log_Delete.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>echo. 2&gt;"$(ProjectDir)\Properties\licenses.licx"</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>RD /S /Q "$(TargetDir)de\"
+RD /S /Q "$(TargetDir)es\"
+RD /S /Q "$(TargetDir)ja\"
+RD /S /Q "$(TargetDir)ru\"
+del "$(TargetDir)*.xml"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1186 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.0" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <Databases isList="true" count="1">
+      <SBS_Market_x0020_Con Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>SBS_Market Con</Alias>
+        <ConnectionString>Password=;Data Source=Badri;Integrated Security=True;Initial Catalog=RSF;User ID=</ConnectionString>
+        <Name>SBS_Market Con</Name>
+        <PromptUserNameAndPassword>False</PromptUserNameAndPassword>
+      </SBS_Market_x0020_Con>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <Real2 Ref="3" type="DataTableSource" isKey="true">
+        <Alias>Real2</Alias>
+        <Columns isList="true" count="13">
+          <value>IdReal2,System.Int32</value>
+          <value>IdReal1,System.Int32</value>
+          <value>Raod,System.Double</value>
+          <value>Fasi,System.Double</value>
+          <value>Tanxa,System.Double</value>
+          <value>IdProd,System.String</value>
+          <value>Prod,System.String</value>
+          <value>UN,System.String</value>
+          <value>CD,System.DateTime</value>
+          <value>Dgg,System.Decimal</value>
+          <value>IdProdTG,System.Int16</value>
+          <value>IsVirtual,System.Double</value>
+          <value>RealType,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Real2</Name>
+        <NameInSource>Real2</NameInSource>
+      </Real2>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="18">
+      <value>,Data,Data,System.String,_x002D_,False,False</value>
+      <value>,Gvari,Gvari,System.String,_x002D_,False,False</value>
+      <value>,Zedd,Zedd,System.String,,False,False</value>
+      <value>,Sagad,Sagad,System.String,,False,False</value>
+      <value>,Address,Address,System.String,,False,False</value>
+      <value>,CompanyName,CompanyName,System.String,,False,False</value>
+      <value>,CompanySagad,CompanySagad,System.String,,False,False</value>
+      <value>,CompanyAddress,CompanyAddress,System.String,,False,False</value>
+      <value>,Ert,Ert,System.String,,False,False</value>
+      <value>,email,email,System.String,,False,False</value>
+      <value>,Valuta,Valuta,System.String,,False,False</value>
+      <value>,Fax,Fax,System.String,,False,False</value>
+      <value>,Phone,Phone,System.String,,False,False</value>
+      <value>,DataEnd,DataEnd,System.String,,False,False</value>
+      <value>,Man,Man,System.String,,False,False</value>
+      <value>,Nom,Nom,System.String,,False,False</value>
+      <value>,Mdz,Mdz,System.String,,False,False</value>
+      <value>,PiradiNom,PiradiNom,System.String,,False,False</value>
+    </Variables>
+  </Dictionary>
+  <GlobalizationStrings isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="5">
+        <ReportTitle1 Ref="5" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.2,7.49,3.8</ClientRectangle>
+          <Components isList="true" count="32">
+            <Text13 Ref="6" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,3.7,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,20,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>შპს „ტექ.სერვისი“</Text>
+              <TextBrush>[23:54:93]</TextBrush>
+              <TextFormat Ref="7" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text13>
+            <Text32 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,2.1,1.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text32</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{Gvari}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="9" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text32>
+            <Text30 Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.6,1.3,2.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text30</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{Data}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="11" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text30>
+            <Text38 Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.8,0.9,1.7,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text38</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{Zedd}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="13" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text38>
+            <Text6 Ref="14" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.6,1.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>შემსრულებელი:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="15" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text6>
+            <Text8 Ref="16" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,2.3,3.3,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{Sagad}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="17" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text8>
+            <Text10 Ref="18" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,2.5,3.3,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{Address}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="19" type="GeneralFormat" isKey="true" />
+            </Text10>
+            <Text29 Ref="20" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.9,0.9,0.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text29</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>ინვოისის № </Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="21" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text29>
+            <Text31 Ref="22" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.9,1.1,0.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text31</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>შეკვეთის № </Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="23" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text31>
+            <Image1 Ref="24" type="Image" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.4,0,2.9,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Image>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QAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBAg8DMGEEAAAQQQQAABBBBAAAEEEDChAIHfhJ1KkxBAAAEEEEAAAQQQQAABBBD4/wB/9n9Ypwil4gAAAABJRU5ErkJggg==</Image>
+              <Name>Image1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+            </Image1>
+            <Text37 Ref="25" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.9,1.3,0.7,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text37</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>თარიღი: </Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="26" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text37>
+            <Text39 Ref="27" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.9,1.5,0.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text39</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>შეკვეთის № </Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="28" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text39>
+            <Text40 Ref="29" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.9,1.7,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11,Bold</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text40</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>საკონტაქტო პირი:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="30" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text40>
+            <Text42 Ref="31" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.9,1.9,0.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text42</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>სახელი:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="32" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text42>
+            <Text41 Ref="33" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.9,2.1,0.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text41</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>გვარი: </Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="34" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text41>
+            <Text43 Ref="35" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.9,2.3,0.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text43</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>ტელ:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="36" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text43>
+            <Text44 Ref="37" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.9,2.5,0.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text44</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>ფაქსი:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="38" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text44>
+            <Text45 Ref="39" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.9,2.7,0.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text45</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>ელ–ფოსტა:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="40" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text45>
+            <Text16 Ref="41" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1.9,1.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11,Bold</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>დამკვეთი:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="42" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text16>
+            <Text48 Ref="43" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.2,3.3,1.1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text48</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>შასის ნომერი</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="44" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text48>
+            <Text49 Ref="45" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,3.1,2.1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text49</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>სატრანსპორტო საშუალება</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="46" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text49>
+            <Text50 Ref="47" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,3.3,0.7,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text50</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>მოდელი</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="48" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text50>
+            <Text51 Ref="49" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.7,3.3,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text51</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>სახელმწიფო ნომერი</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="50" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text51>
+            <Text11 Ref="51" type="Text" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>0,0.8,1.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>შპს "ტექ.სერვისი"</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="52" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text11>
+            <Text47 Ref="53" type="Text" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>0,1,1.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text47</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>ს/კ 400022248</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="54" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text47>
+            <Text46 Ref="55" type="Text" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>0,1.2,2.1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text46</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>ქ.თბილისი ხევძმარის ქ. №1</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="56" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text46>
+            <Text34 Ref="57" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.8,2.7,2.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text34</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{email}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="58" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text34>
+            <Text86 Ref="59" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.4,2.3,2.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text86</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{Phone}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="60" type="GeneralFormat" isKey="true" />
+            </Text86>
+            <Text88 Ref="61" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.8,1.5,2.3,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text88</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{DataEnd}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="62" type="GeneralFormat" isKey="true" />
+            </Text88>
+            <Text20 Ref="63" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,3.5,0.7,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{Man}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="64" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text20>
+            <Text25 Ref="65" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.7,3.5,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text25</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{Mdz}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="66" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text25>
+            <Text52 Ref="67" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.2,3.5,1.1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text52</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{Nom}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="68" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text52>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ReportTitle1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </ReportTitle1>
+        <GroupHeader1 Ref="69" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,4.4,7.49,0.7</ClientRectangle>
+          <Components isList="true" count="13">
+            <Text21 Ref="70" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,1.7,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,14</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="4" />
+              <Parent isRef="69" />
+              <Text>{Real2.RealType}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="71" type="GeneralFormat" isKey="true" />
+            </Text21>
+            <Text2 Ref="72" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>0.3,0.3,0.6,0.25</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="4" />
+              <Parent isRef="69" />
+              <Text>კოდი</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="73" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <Text4 Ref="74" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>0.9,0.3,3.1,0.25</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="4" />
+              <Parent isRef="69" />
+              <Text>დასახელება</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="75" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+            <Text18 Ref="76" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>0,0.3,0.3,0.25</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="4" />
+              <Parent isRef="69" />
+              <Text>N</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="77" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text18>
+            <Text12 Ref="78" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>4.7,0.3,0.9,0.25</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="4" />
+              <Parent isRef="69" />
+              <Text>ერთ. ღირებულება</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="79" type="GeneralFormat" isKey="true" />
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text12>
+            <Text14 Ref="80" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>4,0.3,0.7,0.25</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="4" />
+              <Parent isRef="69" />
+              <Text>რაო–ბა</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="81" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text14>
+            <Text19 Ref="82" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>5.6,0.3,1,0.25</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="4" />
+              <Parent isRef="69" />
+              <Text>საერთო ღირებულება</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="83" type="NumberFormat" isKey="true">
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+              </TextFormat>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text19>
+            <Text22 Ref="84" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>0.3,0.55,0.6,0.15</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text22</Name>
+              <Page isRef="4" />
+              <Parent isRef="69" />
+              <Text>2</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="85" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text22>
+            <Text23 Ref="86" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>0.9,0.55,3.1,0.15</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text23</Name>
+              <Page isRef="4" />
+              <Parent isRef="69" />
+              <Text>2</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="87" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text23>
+            <Text24 Ref="88" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>4,0.55,0.7,0.15</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text24</Name>
+              <Page isRef="4" />
+              <Parent isRef="69" />
+              <Text>3</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="89" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text24>
+            <Text26 Ref="90" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>4.7,0.55,0.9,0.15</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text26</Name>
+              <Page isRef="4" />
+              <Parent isRef="69" />
+              <Text>5</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="91" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text26>
+            <Text27 Ref="92" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>5.6,0.55,1,0.15</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text27</Name>
+              <Page isRef="4" />
+              <Parent isRef="69" />
+              <Text>6</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="93" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text27>
+            <Text54 Ref="94" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>0,0.55,0.3,0.15</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text54</Name>
+              <Page isRef="4" />
+              <Parent isRef="69" />
+              <Text>1</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="95" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text54>
+          </Components>
+          <Condition>{Real2.RealType}</Condition>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeader1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </GroupHeader1>
+        <Data1 Ref="96" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,5.5,7.49,0.15</ClientRectangle>
+          <Components isList="true" count="6">
+            <Text1 Ref="97" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.3,0,0.6,0.15</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="4" />
+              <Parent isRef="96" />
+              <Text>{Real2.IdProd}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="98" type="GeneralFormat" isKey="true" />
+            </Text1>
+            <Text3 Ref="99" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.9,0,3.1,0.15</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="4" />
+              <Parent isRef="96" />
+              <Text>{Real2.Prod}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="100" type="GeneralFormat" isKey="true" />
+            </Text3>
+            <Text5 Ref="101" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,0,0.7,0.15</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Right</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="4" />
+              <Parent isRef="96" />
+              <Text>{Real2.Raod}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="102" type="GeneralFormat" isKey="true" />
+            </Text5>
+            <Text7 Ref="103" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.7,0,0.9,0.15</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="4" />
+              <Parent isRef="96" />
+              <Text>{Real2.Fasi}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="104" type="NumberFormat" isKey="true">
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+              </TextFormat>
+              <VertAlignment>Center</VertAlignment>
+            </Text7>
+            <Text9 Ref="105" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.6,0,1,0.15</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="4" />
+              <Parent isRef="96" />
+              <Text>{Real2.Tanxa}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="106" type="NumberFormat" isKey="true">
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+              </TextFormat>
+              <VertAlignment>Center</VertAlignment>
+            </Text9>
+            <Text17 Ref="107" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,0.3,0.15</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="4" />
+              <Parent isRef="96" />
+              <Text>{Line}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="108" type="GeneralFormat" isKey="true" />
+              <Type>SystemVariables</Type>
+            </Text17>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>Real2</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>Data1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="2">
+            <value>ASC</value>
+            <value>RealType</value>
+          </Sort>
+        </Data1>
+        <GroupFooter1 Ref="109" type="GroupFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,6.05,7.49,0.5</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text53 Ref="110" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.6,0.05,1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text53</Name>
+              <Page isRef="4" />
+              <Parent isRef="109" />
+              <Text>{Sum(Data1,Real2.Tanxa)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="111" type="NumberFormat" isKey="true">
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+              </TextFormat>
+              <Type>Expression</Type>
+            </Text53>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>GroupFooter1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </GroupFooter1>
+        <ReportSummary1 Ref="112" type="ReportSummaryBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,6.95,7.49,3.4</ClientRectangle>
+          <Components isList="true" count="10">
+            <Text28 Ref="113" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.6,0,1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text28</Name>
+              <Page isRef="4" />
+              <Parent isRef="112" />
+              <Text>{Sum(Data1,Real2.Tanxa)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="114" type="NumberFormat" isKey="true">
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+              </TextFormat>
+              <Type>Expression</Type>
+            </Text28>
+            <Text35 Ref="115" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.5,2.1,1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text35</Name>
+              <Page isRef="4" />
+              <Parent isRef="112" />
+              <Text>დირექტორი</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="116" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text35>
+            <Text36 Ref="117" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.3,2.1,1.5,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text36</Name>
+              <Page isRef="4" />
+              <Parent isRef="112" />
+              <Text>/გიორგი შალიკიანი  /</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="118" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text36>
+            <Text15 Ref="119" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.5,2.1,1.8,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="4" />
+              <Parent isRef="112" />
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="120" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text15>
+            <Text80 Ref="121" type="Text" isKey="true">
+              <Border>Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.5,2.5,1.7,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text80</Name>
+              <Page isRef="4" />
+              <Parent isRef="112" />
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="122" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text80>
+            <Text81 Ref="123" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.2,2.5,1.9,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text81</Name>
+              <Page isRef="4" />
+              <Parent isRef="112" />
+              <Text>/გიორგი მგალობლიშვილი/</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="124" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+            </Text81>
+            <Text33 Ref="125" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.5,2.5,1,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text33</Name>
+              <Page isRef="4" />
+              <Parent isRef="112" />
+              <Text>დირექტორი</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="126" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text33>
+            <Text82 Ref="127" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1.3,1.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text82</Name>
+              <Page isRef="4" />
+              <Parent isRef="112" />
+              <Text>საბანკო რეკვიზიტები:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="128" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text82>
+            <Text84 Ref="129" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1.5,1.8,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text84</Name>
+              <Page isRef="4" />
+              <Parent isRef="112" />
+              <Text>თიბისი ბანკი TBCBGE22</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="130" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text84>
+            <Text83 Ref="131" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1.7,2.3,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,11</Font>
+              <LinesOfUnderline>None</LinesOfUnderline>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text83</Name>
+              <Page isRef="4" />
+              <Parent isRef="112" />
+              <Text>ა/ა GE26TB7962536080100001</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="132" type="GeneralFormat" isKey="true" />
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text83>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ReportSummary1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </ReportSummary1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>2826772e941c4769a2bc85417f8de27b</Guid>
+      <Margins>0.39,0.39,0.39,0.39</Margins>
+      <Name>Page1</Name>
+      <Page isRef="4" />
+      <PageHeight>11.69</PageHeight>
+      <PageWidth>8.27</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="133" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="134" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>7/5/2013 3:18:16 PM</ReportChanged>
+  <ReportCreated>4/10/2008 10:30:20 AM</ReportCreated>
+  <ReportGuid>3c6fbe718ee74ac8b4f5faca0f74ccf7</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2008.1.129</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        
+        public Report()
+        {
+            this.InitializeComponent();
+        }
+        #region StiReport Designer generated code - do not modify#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="1">
+    <Style1 Ref="135" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Brush>LemonChiffon</Brush>
+      <Font>Arial,8</Font>
+      <Name>Style1</Name>
+      <TextBrush>Black</TextBrush>
+    </Style1>
+  </Styles>
+</StiSerializer>
